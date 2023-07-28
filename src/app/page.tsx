@@ -1,4 +1,4 @@
-import { Nav } from "@/components/nav";
+import { Nav } from "@/components/Nav";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 

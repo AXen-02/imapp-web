@@ -1,5 +1,5 @@
-import { AccountAvatar } from "./acc-avatar";
-import { ThemeToggler } from "./theme-toggler";
+import { AccountAvatar } from "./AccountAvatar";
+import { ThemeToggler } from "./ThemeToggler";
 import { Button } from "./ui/button";
 import {
   RxLayout,
@@ -14,36 +14,7 @@ export function Nav() {
       {/* nav left-side */}
       <div className="mr-4 hidden md:flex">
         <a className="mr-6 flex items-center space-x-2" href="/">
-          <RxComponentBoolean className="h-8 w-8 animate-spin-slow" />
-          {/* <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 256 256"
-            className="h-6 w-6"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <line
-              x1="208"
-              y1="128"
-              x2="128"
-              y2="208"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-            <line
-              x1="192"
-              y1="40"
-              x2="40"
-              y2="192"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-          </svg> */}
+          <RxComponentBoolean className="h-8 w-8" />
           <span className="hidden font-bold sm:inline-block">imapp</span>
         </a>
         <nav className="flex items-center space-x-6 text-sm font-medium">
