@@ -12,6 +12,7 @@ import {
 } from "react-icons/rx";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import { useToast } from "./ui/use-toast";
+import { Icons } from "./Icons";
 
 export function Nav() {
   const { toast } = useToast();
@@ -30,7 +31,7 @@ export function Nav() {
         {/* nav left-side */}
         <div className="mr-4 hidden md:flex">
           <Link className="mr-6 flex items-center space-x-2" href="/">
-            <RxComponentBoolean className="h-8 w-8" />
+            <Icons.logo className="h-8 w-8" />
             <span className="hidden font-bold sm:inline-block">imapp</span>
           </Link>
           {/* main nav bar */}
