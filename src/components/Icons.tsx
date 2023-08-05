@@ -1,9 +1,39 @@
 import { LucideProps } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
 import { RxComponentBoolean } from "react-icons/rx";
+import {
+  LuHammer,
+  LuBookOpen,
+  LuBook,
+  LuBookPlus,
+  LuPanelLeftOpen,
+  LuPanelLeftClose,
+  LuDownload,
+} from "react-icons/lu";
 
 export const Icons = {
+  book: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuBook {...props} />;
+  },
+  bookOpen: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuBookOpen {...props} />;
+  },
+  bookPlus: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuBookPlus {...props} />;
+  },
+  download: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuDownload {...props} />;
+  },
   logo: (props: React.HTMLAttributes<SVGElement>) => {
+    return <RxComponentBoolean {...props} />;
+  },
+  navMenuOpen: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuPanelLeftOpen {...props} />;
+  },
+  lecture: (props: React.HTMLAttributes<SVGElement>) => {
+    return <RxComponentBoolean {...props} />;
+  },
+  troubleshooter: (props: React.HTMLAttributes<SVGElement>) => {
     return <RxComponentBoolean {...props} />;
   },
   logo2: (props: LucideProps) => (

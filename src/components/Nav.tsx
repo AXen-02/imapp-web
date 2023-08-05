@@ -9,6 +9,7 @@ import {
   RxHamburgerMenu,
   RxDiscordLogo,
   RxComponentBoolean,
+  RxViewVertical,
 } from "react-icons/rx";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import { useToast } from "./ui/use-toast";
@@ -26,8 +27,8 @@ export function Nav() {
   };
 
   return (
-    <div className="fixed top-0 inset-x-0 h-fit border-b border-x-zinc-300 z-[10]">
-      <div className="container flex h-14 items-center   max-w-7xl mx-auto justify-between gap-2">
+    <div className="sticky top-0 inset-x-0 h-fit z-40 border-b border-x-zinc-300 bg-background/95">
+      <div className="container flex h-14 items-center max-w-7xl mx-auto justify-between gap-2">
         {/* nav left-side */}
         <div className="mr-4 hidden md:flex">
           <Link className="mr-6 flex items-center space-x-2" href="/">
@@ -56,7 +57,7 @@ export function Nav() {
           variant={"ghost"}
           size={"icon"}
         >
-          <RxHamburgerMenu className="h-6 w-6" />
+          <RxViewVertical className="h-6 w-6" />
         </Button>
         {/* nav right-side */}
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
