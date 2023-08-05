@@ -37,10 +37,10 @@ export function Nav() {
           {/* main nav bar */}
           <nav className={"flex items-center space-x-4 lg:space-x-6"}>
             <Link
-              href="/lectures"
+              href="/tutorials"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
-              Lectures
+              Tutorials
             </Link>
             <Link
               href="/troubleshooter"
