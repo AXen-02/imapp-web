@@ -8,7 +8,7 @@ const page = () => {
       <Sidebar className="hidden lg:block" />
       <div className="col-span-5 lg:col-span-4 lg:border-l">
         <div className="px-4 py-6 lg:px-8">
-          <ScrollArea className="h-[80vh] px-1">
+          <ScrollArea className="h-[85vh] px-1">
             <b>
               <u>EDITOR HERE</u>
             </b>

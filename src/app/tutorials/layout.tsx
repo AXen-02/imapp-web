@@ -10,9 +10,9 @@ interface ExamplesLayoutProps {
 export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
   return (
     <>
-      <div className="container my-2">
+      <div className="container my-[2vh]">
         <section>
-          <div className="h-[85vh] overflow-hidden rounded-[0.5rem] border bg-background shadow">
+          <div className="h-[90vh] overflow-hidden rounded-[0.5rem] border bg-background shadow">
             {children}
           </div>
         </section>
