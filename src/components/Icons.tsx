@@ -1,6 +1,6 @@
 import { LucideProps } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
-import { RxComponentBoolean } from "react-icons/rx";
+import { RxComponentBoolean, RxDashboard } from "react-icons/rx";
 import {
   LuHammer,
   LuBookOpen,
@@ -11,9 +11,14 @@ import {
   LuDownload,
   LuSettings2,
   LuBot,
+  LuLayoutDashboard,
+  LuLayoutGrid,
 } from "react-icons/lu";
 
 export const Icons = {
+  browse: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuLayoutGrid {...props} />;
+  },
   book: (props: React.HTMLAttributes<SVGElement>) => {
     return <LuBook {...props} />;
   },

@@ -13,55 +13,49 @@ const Sidebar: FC<SidebarProps> = ({ className }) => {
       <div className="space-y-4 py-4">
         {/* MENU */}
         <div className="px-3 py-2">
+          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">
+            Discover
+          </h2>
           <div className="space-y-1">
             <Button variant="secondary" className="w-full justify-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="mr-2 h-4 w-4"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <polygon points="10 8 16 12 10 16 10 8" />
-              </svg>
-              Read Now
+              <Icons.bookOpen className="mr-2 h-4 w-4" />
+              Recent
             </Button>
             <Button variant="ghost" className="w-full justify-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="mr-2 h-4 w-4"
-              >
-                <rect width="7" height="7" x="3" y="3" rx="1" />
-                <rect width="7" height="7" x="14" y="3" rx="1" />
-                <rect width="7" height="7" x="14" y="14" rx="1" />
-                <rect width="7" height="7" x="3" y="14" rx="1" />
-              </svg>
+              <Icons.browse className="mr-2 h-4 w-4" />
               Browse
             </Button>
+            {/* For Instructor 
             <Button variant="ghost" className="w-full justify-start">
               <Icons.bookPlus className="mr-2 h-4 w-4" />
               New tutorial
-            </Button>
+            </Button> */}
           </div>
         </div>
         {/* USER TUTORIALS */}
         <div className="px-3 py-2">
-          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">
+          <h2 className="relative mb-2 px-4 text-lg font-semibold tracking-tight">
             My Tutorials
           </h2>
-          <ScrollArea className="h-[300px] px-1">
-            <div className="space-y-1">
+          <ScrollArea className="h-[500px]">
+            <div className="p-2">
               {/* Map user tutorials here */}
+              <Button
+                // key={`${playlist}-${i}`}
+                variant="ghost"
+                className="w-full justify-start font-normal"
+              >
+                <Icons.book className="mr-2 h-4 w-4" />
+                Tutorial 1
+              </Button>
+              <Button
+                // key={`${playlist}-${i}`}
+                variant="ghost"
+                className="w-full justify-start font-normal"
+              >
+                <Icons.book className="mr-2 h-4 w-4" />
+                Tutorial 1
+              </Button>
               <Button
                 // key={`${playlist}-${i}`}
                 variant="ghost"

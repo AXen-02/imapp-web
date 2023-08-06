@@ -7,8 +7,9 @@ const page = () => {
     <div className="grid grid-cols-5">
       <Sidebar className="hidden lg:block" />
       <div className="col-span-5 lg:col-span-4 lg:border-l">
-        <div className="px-4 py-6 lg:px-8">
+        <div className="p-6">
           <ScrollArea className="h-[85vh] px-1">
+            {/* TODO: Insert WYSIWYG HERE */}
             <b>
               <u>EDITOR HERE</u>
             </b>
@@ -304,7 +305,7 @@ const page = () => {
       </div>
 
       {/* TODO: Integrate Novel.sh and tiptap for editing a tutorial */}
-      {/* TODO: Create Sidebar containing lectures to  be created */}
+      {/* TODO: Create Sidebar(for webview) and Bottombar(for mobileview)) containing lectures to  be created */}
     </div>
   );
 };
