@@ -69,7 +69,7 @@ export function Nav() {
         {/* minibutton */}
         <Sheet>
           <SheetTrigger>
-            <RxViewVertical className="h-8 w-8 md:hidden" />
+            <RxViewVertical className="h-6 w-6 md:hidden" />
           </SheetTrigger>
           <SheetContent side={"left"}>
             <SheetHeader>
