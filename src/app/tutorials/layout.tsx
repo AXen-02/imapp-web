@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Examples",
+  title: "Imapp - Tutorials",
   description: "Check out some examples app built using the components.",
 };
 

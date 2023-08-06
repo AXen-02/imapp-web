@@ -76,35 +76,39 @@ export function Nav() {
               <SheetTitle>
                 <SheetClose asChild>
                   <Link className="flex items-center space-x-2" href="/">
-                    <Icons.logo className="h-6 w-6" />
+                    <Icons.logo className="h-8 w-8" />
                     <span className="font-bold">Imapp</span>
                   </Link>
                 </SheetClose>
               </SheetTitle>
 
-              <div className="flex flex-col space-y-3 ml-8 text-left">
+              {/* NAVIGATORS */}
+              <div className="flex flex-col space-y-3 ml-10 text-left">
                 <SheetClose asChild>
                   <Link
                     href="/tutorials"
-                    className="font-medium text-muted-foreground transition-colors hover:text-primary"
+                    className="flex space-x-2 font-medium text-muted-foreground transition-colors hover:text-primary"
                   >
                     Tutorials
+                    <Icons.bookOpen className="h-6 w-6 ml-2" />
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
                   <Link
                     href="/troubleshooter"
-                    className="font-medium text-muted-foreground transition-colors hover:text-primary"
+                    className="flex space-x-2 font-medium text-muted-foreground transition-colors hover:text-primary"
                   >
                     Troubleshooter
+                    <Icons.troubleshooter className="h-6 w-6 ml-2" />
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
                   <Link
                     href="/settings"
-                    className="font-medium text-muted-foreground transition-colors hover:text-primary"
+                    className="flex space-x-2 font-medium text-muted-foreground transition-colors hover:text-primary"
                   >
                     Settings
+                    <Icons.settings className="h-6 w-6 ml-2" />
                   </Link>
                 </SheetClose>
               </div>

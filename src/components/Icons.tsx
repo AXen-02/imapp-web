@@ -9,6 +9,8 @@ import {
   LuPanelLeftOpen,
   LuPanelLeftClose,
   LuDownload,
+  LuSettings2,
+  LuBot,
 } from "react-icons/lu";
 
 export const Icons = {
@@ -29,12 +31,6 @@ export const Icons = {
   },
   navMenuOpen: (props: React.HTMLAttributes<SVGElement>) => {
     return <LuPanelLeftOpen {...props} />;
-  },
-  lecture: (props: React.HTMLAttributes<SVGElement>) => {
-    return <RxComponentBoolean {...props} />;
-  },
-  troubleshooter: (props: React.HTMLAttributes<SVGElement>) => {
-    return <RxComponentBoolean {...props} />;
   },
   logo2: (props: LucideProps) => (
     <svg
@@ -58,5 +54,11 @@ export const Icons = {
   ),
   google: (props: React.HTMLAttributes<SVGElement>) => {
     return <FcGoogle {...props} />;
+  },
+  settings: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuSettings2 {...props} />;
+  },
+  troubleshooter: (props: React.HTMLAttributes<SVGElement>) => {
+    return <LuBot {...props} />;
   },
 };
