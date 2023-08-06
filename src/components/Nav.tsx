@@ -3,6 +3,15 @@ import Link from "next/link";
 import { AccountAvatar } from "./AccountAvatar";
 import { ThemeToggler } from "./ThemeToggler";
 import { Button, buttonVariants } from "./ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 import { cn } from "@/lib/utils";
 import {
   RxLayout,
@@ -49,16 +58,62 @@ export function Nav() {
             >
               Troubleshooter
             </Link>
+            <Link
+              href="/settings"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              Settings
+            </Link>
           </nav>
         </div>
         {/* minibutton */}
-        <Button
-          className="inline-flex items-center justify-center rounded-md font-medium  md:hidden"
-          variant={"ghost"}
-          size={"icon"}
-        >
-          <RxViewVertical className="h-6 w-6" />
-        </Button>
+        <Sheet>
+          <SheetTrigger>
+            <RxViewVertical className="h-8 w-8 md:hidden" />
+          </SheetTrigger>
+          <SheetContent side={"left"}>
+            <SheetHeader>
+              <SheetTitle>
+                <SheetClose asChild>
+                  <Link className="flex items-center space-x-2" href="/">
+                    <Icons.logo className="h-6 w-6" />
+                    <span className="font-bold">Imapp</span>
+                  </Link>
+                </SheetClose>
+              </SheetTitle>
+
+              <div className="flex flex-col space-y-3 ml-8 text-left">
+                <SheetClose asChild>
+                  <Link
+                    href="/tutorials"
+                    className="font-medium text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    Tutorials
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link
+                    href="/troubleshooter"
+                    className="font-medium text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    Troubleshooter
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link
+                    href="/settings"
+                    className="font-medium text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    Settings
+                  </Link>
+                </SheetClose>
+              </div>
+
+              {/* TODO: Map Tutorials here */}
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+
         {/* nav right-side */}
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           {/* searchbar */}
